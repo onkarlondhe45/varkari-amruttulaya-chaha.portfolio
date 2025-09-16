@@ -163,6 +163,7 @@ section h2 {
   background-color: rgb(255, 255, 255);
   color: #d2691e;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 /* Menu Section */
@@ -263,6 +264,7 @@ footer {
     padding:1rem;
     gap:1rem;
     border-radius:0 0 0 10px;
+    text-align: center;
   }
   .nav-links.open{transform:translateX(0);}
   .hamburger{display:flex;}
