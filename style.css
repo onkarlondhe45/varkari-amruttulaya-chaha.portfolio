@@ -247,7 +247,6 @@ footer {
   color: white;
   text-align: center;
   padding: 1.5rem;
-  margin-top: 2rem;
 }
 
 /* Responsive Styles */
@@ -386,7 +385,6 @@ footer .dev-name {
 footer {
   text-align: center;
   padding: 20px 0;
-  margin-top: 30px;
 }
 
 .footer-logo {
