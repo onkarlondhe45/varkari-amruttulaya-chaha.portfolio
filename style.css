@@ -87,6 +87,15 @@ main {
   margin: auto;
 }
 
+.hero .owner-photo {
+  width: 250px !important;    /* increase size */
+  height: 250px !important;   /* keep it square */
+  border-radius: 50%;         /* circular look */
+  object-fit: cover;          /* maintain aspect ratio */
+  display: block;
+  margin: 1rem auto;          /* center horizontally */
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -124,13 +133,20 @@ main {
 }
 
 .hero h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #d2691e;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.842);
+  font-weight: bold ;
+  box-shadow:#333;
+  border-radius: 10px;
+  padding: 15px;
+  text-shadow: #5a2d0c;
+  border: #f4e1d2;
 }
 
 .hero p {
-  margin-top: 20px;
-  color: rgb(255, 255, 255);
+  color: #d2691e;
   border-color: rgb(15, 14, 14);
 }
 
@@ -153,7 +169,6 @@ main {
 
 /* About Section */
 section {
-  padding: 3rem 0;
   text-align: center;
 }
 
@@ -412,4 +427,25 @@ main {
   margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.section-separator {
+  text-align: center;
+  font-size: 1.5rem;   /* size of the stars/dots */
+  color: #d2691e;      /* match your theme color */
+  margin: 1.5rem 0;    /* spacing above & below */
+  letter-spacing: 0.5rem; /* space between symbols */
+}
+
+.hero-story {
+  font-size: 1.2rem;
+  color: #d2691e;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.842);
+  font-weight: bold ;
+  box-shadow:#333;
+  border-radius: 10px;
+  padding: 15px;
+  text-shadow: #5a2d0c;
+  border: #f4e1d2;
 }
