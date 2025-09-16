@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>वारकरी अमृततुल्य</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
     <!-- Header with Horizontal Navbar -->
     <header>
@@ -18,6 +27,7 @@
           />
           <h1 class="logo-text">वारकरी अमृततुल्य</h1>
         </div>
+
         <nav>
           <ul class="nav-links">
             <li><a href="#home">मुख्यपृष्ठ</a></li>
@@ -27,7 +37,8 @@
             <li><a href="#testimonials">अभिप्राय</a></li>
             <li><a href="#contact">संपर्क</a></li>
           </ul>
-          <div class="hamburger">
+
+          <div class="hamburger" aria-hidden="true">
             <span></span>
             <span></span>
             <span></span>
@@ -42,13 +53,47 @@
       <section id="home" class="hero">
         <img src="images/arpit.jpg" alt="Owner Photo" class="owner-photo" />
         <h2>संस्थापक: श्री. अर्पित येलाले</h2>
-        <br />
+
+        <p class="contact-title">🤳आमच्याशी संपर्क साधण्यासाठी👇</p>
+
+        <div class="contact-icons">
+          <a href="tel:+917559253846" class="phone" title="Call">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            <span class="sr-only">Call</span>
+          </a>
+
+          <a
+            href="https://wa.me/917559253846"
+            class="whats"
+            target="_blank"
+            rel="noopener"
+            title="WhatsApp"
+          >
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span class="sr-only">WhatsApp</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/varkari_amruttulya_mh13?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            class="insta"
+            target="_blank"
+            rel="noopener"
+            title="Instagram"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+
+          <a href="mailto:yourmail@gmail.com" class="email" title="Email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
       </section>
 
-      <marquee direction="left" style="color: #d2691e"
-        >ग्राहकांना घरगुती चवीचा आणि परवडणारा गुळाचा चहा देणं हेच आमचं ध्येय
-        आहे.</marquee
-      >
+      <marquee direction="left" style="color: #d2691e">
+        ग्राहकांना घरगुती चवीचा आणि परवडणारा गुळाचा चहा देणं हेच आमचं ध्येय आहे.
+      </marquee>
 
       <!-- About Section -->
       <section id="about">
@@ -94,8 +139,15 @@
             <h3>मोहोळ - मुख्य शाखा</h3>
             <p>पत्ता: मोहोळ, महाराष्ट्र</p>
             <p>वेळ: सकाळी 6:00 ते रात्री 10:00</p>
-            <a href="#" class="map-link">🗺️ नकाशा पाहा</a>
+            <a
+              href="https://maps.app.goo.gl/by6hMekoUnKNcJbc6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🗺️ नकाशा पाहा
+            </a>
           </div>
+
           <div class="branch-card">
             <img
               src="images/Varkari-Cup.png"
@@ -105,18 +157,31 @@
             <h3>मानेगाव - सोलापूर</h3>
             <p>पत्ता: मानेगाव, माढा</p>
             <p>वेळ: सकाळी 6:00 ते रात्री 10:00</p>
-            <a href="#" class="map-link">🗺️ नकाशा पाहा</a>
+            <a
+              href="https://maps.app.goo.gl/x5TY6ee6kobCBSXg9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🗺️ नकाशा पाहा
+            </a>
           </div>
+
           <div class="branch-card">
             <img
               src="images/Varkari-Cup.png"
               alt="Varkari Cup Logo"
               class="branch-logo"
             />
-            <h3>जालना  - जालना</h3>
-            <p>पत्ता: जालना , जालना</p>
+            <h3>पंढरपूर - सोलापूर</h3>
+            <p>पत्ता: पंढरपूर, सोलापूर</p>
             <p>वेळ: सकाळी 6:00 ते रात्री 10:00</p>
-            <a href="#" class="map-link">🗺️ नकाशा पाहा</a>
+            <a
+              href="https://maps.app.goo.gl/wwfc7RpEBRpmnHYp9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🗺️ नकाशा पाहा
+            </a>
           </div>
         </div>
       </section>
@@ -125,10 +190,12 @@
       <section id="testimonials">
         <h2>ग्राहकांचे अभिप्राय</h2>
         <blockquote>
-          "वारकरी अमृततुल्यचा गुळाचा चहा म्हणजे खरंच स्वर्गीय अनुभव!" – अजिंक्यराणा पाटील
+          "वारकरी अमृततुल्यचा गुळाचा चहा म्हणजे खरंच स्वर्गीय अनुभव!" –
+          अजिंक्यराणा पाटील
         </blockquote>
         <blockquote>
-          "वारकरी अमृततुल्य गुळाचा चहा इतका मस्त की रोज येऊन प्यावं वाटतं." – मोहोळकर
+          "वारकरी अमृततुल्य गुळाचा चहा इतका मस्त की रोज येऊन प्यावं वाटतं." –
+          मोहोळकर
         </blockquote>
       </section>
 
@@ -149,7 +216,16 @@
         class="footer-logo"
       />
       <p>© 2025 वारकरी अमृततुल्य | सर्व हक्क राखीव</p>
-      <p>Follow us: 🌐 Facebook | 📷 Instagram | 💬 WhatsApp</p>
+      <p>
+        💻 Designed & Developed by
+        <a
+          href="https://www.instagram.com/onkarlondhe_45"
+          target="_blank"
+          class="dev-name"
+          >Onkar Londhe</a
+        >
+        🚀✨
+      </p>
     </footer>
 
     <!-- Scripts -->

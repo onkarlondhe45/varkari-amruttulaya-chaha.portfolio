@@ -129,8 +129,9 @@ main {
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  border-color: rgb(15, 14, 14);
 }
 
 .cta-btn {
@@ -249,11 +250,6 @@ footer {
   margin-top: 2rem;
 }
 
-.footer-logo {
-  height: 40px;
-  margin-bottom: 10px;
-}
-
 /* Responsive Styles */
 @media(max-width:768px){
   .nav-links{
@@ -275,4 +271,125 @@ footer {
   .hero img{width:120px;height:120px;}
   .menu-items{flex-direction:column;align-items:center;}
   .branch-card{width:100%;max-width:300px;}
+}
+
+.mobile-container, .whatsapp-container {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-container i {
+  color: #d2691e; /* चहा रंग */
+  font-size: 1.5rem;
+}
+
+.whatsapp-container a {
+  background-color: #25D366;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.whatsapp-container a:hover {
+  background-color: #1ebe57;
+}
+
+.hero .mobile-container,
+.hero .whatsapp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* icon + text center मध्ये */
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.hero .whatsapp-container a {
+  color: #ffffff; /* WhatsApp हिरवा रंग */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero .whatsapp-container a:hover {
+  text-decoration: underline;
+}
+
+/* --- Contact (small, horizontal icons) --- */
+.contact-title {
+  font-size: 1rem;           /* छोटा शीर्षक */
+  font-weight: 600;
+  margin: 10px 0 8px;
+  color: #fff;
+  position: relative;
+  z-index: 3;      
+}
+
+/* horizontal icon row */
+.contact-icons {
+  display: flex;
+  gap: 16px;                 /* icons मधला अंतर */
+  justify-content: center;   /* केंद्रात रांग */
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+/* icon button — small rounded squares */
+.contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;               /* छोटा आकार — बदला if needed */
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.521); /* हलका translucent bg for contrast */
+  color: #fff;
+  text-decoration: none;
+  transition: transform .18s ease, background .18s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* icon size inside button */
+.contact-icons a i {
+  font-size: 18px;           /* icon size (small) */
+  line-height: 1;
+}
+
+/* hover micro-interaction */
+.contact-icons a:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.14);
+}
+
+/* optional: brand colors for each icon (subtle) */
+.contact-icons a.phone   { color: #1e90ff; }  /* blue */
+.contact-icons a.whats  { color: #25d366; }  /* whatsapp green */
+.contact-icons a.insta   { color: #e1306c; } /* instagram pink */
+.contact-icons a.email  { color: #ffd166; }  /* warm yellow */
+
+footer .dev-name {
+  color: #f4c542;     /* पिवळसर highlight */
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footer-logo {
+  width: 200px;   /* लोगोचा आकार वाढवण्यासाठी */
+  height: auto;   /* aspect ratio कायम राहील */
 }
