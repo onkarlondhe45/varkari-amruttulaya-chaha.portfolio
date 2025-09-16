@@ -391,3 +391,23 @@ footer {
   width: 200px;   /* लोगोचा आकार वाढवण्यासाठी */
   height: auto;   /* aspect ratio कायम राहील */
 }
+
+/* Header & Navbar */
+header {
+  position: fixed; /* instead of sticky */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f4e1d2;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Add padding to main so content not hidden behind header */
+main {
+  padding-top: 80px; /* adjust according to header height */
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
