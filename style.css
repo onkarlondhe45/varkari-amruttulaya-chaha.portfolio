@@ -449,3 +449,13 @@ main {
   text-shadow: #5a2d0c;
   border: #f4e1d2;
 }
+
+.map-link {
+  text-decoration: none; /* Removes underline */
+  color: #d2691e; /* Optional: set your desired color */
+  font-weight: bold; /* Optional: make it stand out */
+}
+
+.map-link:hover {
+  color: #a0522d; /* Optional: change color on hover */
+}
