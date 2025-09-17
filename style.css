@@ -547,3 +547,46 @@ main {
   font-weight: bold; /* optional: make it stand out */
   font-size: 0.85rem; /* match smaller toggle */
 }
+
+.logo-text {
+  font-weight: 700; /* bold */
+  background: linear-gradient(90deg, #ff4500, #ff7e5f, #ffb347); /* stronger gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  transition: transform 0.3s ease, text-shadow 0.4s ease;
+}
+
+/* Hover effect */
+.logo-text:hover {
+  transform: scale(1.05); /* subtle zoom */
+  text-shadow: 4px 4px 15px rgba(255, 69, 0, 0.7); /* stronger glow */
+}
+
+/* Optional: animated gradient for extra vibrancy */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.logo-text {
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease infinite;
+}
+
+/* Gentle forward-backward rocking effect (2D) */
+.logo-img {
+  width: 60px; /* keep original size */
+  height: auto;
+  transform-origin: center bottom; /* pivot for natural rocking */
+  animation: rockLogo 3s ease-in-out infinite;
+}
+
+@keyframes rockLogo {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }   /* tilt forward */
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }  /* tilt backward */
+  100% { transform: rotate(0deg); }
+}
