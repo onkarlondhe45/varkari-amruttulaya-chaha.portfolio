@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>वारकरी अमृततुल्य</title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -25,23 +23,48 @@
             alt="Varkari Cup Logo"
             class="logo-img"
           />
-          <h1 class="logo-text">वारकरी अमृततुल्य</h1>
+          <h1 class="logo-text lang mr">वारकरी अमृततुल्य</h1>
+          <h1 class="logo-text lang en" style="display: none">
+            Varkari Amruttulya
+          </h1>
         </div>
 
         <nav>
           <ul class="nav-links">
-            <li><a href="#home">मुख्यपृष्ठ</a></li>
-            <li><a href="#about">आमच्याबद्दल</a></li>
-            <li><a href="#menu">मेन्यू</a></li>
-            <li><a href="#branches">शाखा</a></li>
-            <li><a href="#testimonials">अभिप्राय</a></li>
-            <li><a href="#contact">संपर्क</a></li>
+            <li>
+              <a href="#home" class="lang mr">मुख्यपृष्ठ</a>
+              <a href="#home" class="lang en" style="display: none">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="lang mr">आमच्याबद्दल</a>
+              <a href="#about" class="lang en" style="display: none">About</a>
+            </li>
+            <li>
+              <a href="#menu" class="lang mr">मेन्यू</a>
+              <a href="#menu" class="lang en" style="display: none">Menu</a>
+            </li>
+            <li>
+              <a href="#branches" class="lang mr">शाखा</a>
+              <a href="#branches" class="lang en" style="display: none"
+                >Branches</a
+              >
+            </li>
+            <li>
+              <a href="#testimonials" class="lang mr">अभिप्राय</a>
+              <a href="#testimonials" class="lang en" style="display: none"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="lang mr">संपर्क</a>
+              <a href="#contact" class="lang en" style="display: none"
+                >Contact</a
+              >
+            </li>
           </ul>
 
           <div class="hamburger" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
           </div>
         </nav>
       </div>
@@ -49,57 +72,87 @@
 
     <!-- Main Content -->
     <main>
+      <!-- Language Toggle Switch -->
+      <div class="language-switch toggle-right">
+        <label class="switch">
+          <input type="checkbox" id="langToggle" />
+          <span class="slider round"></span>
+        </label>
+        <span id="langLabel">मराठी</span>
+      </div>
+
       <!-- Home Section -->
       <section id="home" class="hero">
-        <p class="hero-story">
+        <p class="hero-story lang mr">
           वारकरी अमृततुल्यमध्ये आपले स्वागत आहे — जिथे परंपरा आणि स्वाद एकत्र
           येतात! ☕🌿
         </p>
+        <p class="hero-story lang en" style="display: none">
+          Welcome to Varkari Amruttulya — where tradition meets taste! ☕🌿
+        </p>
         <img src="images/arpit.jpg" alt="Owner Photo" class="owner-photo" />
-        <h2>संस्थापक: श्री. अर्पित येलाले</h2>
+        <h2 class="hero-story lang mr">संस्थापक: श्री. अर्पित येलाले</h2>
+        <h2 class="hero-story lang en" style="display: none">
+          Founder: Mr. Arpit Yelale
+        </h2>
       </section>
-
-      <marquee direction="left" style="color: #d2691e">
-        ग्राहकांना घरगुती चवीचा आणि परवडणारा गुळाचा चहा देणं हेच आमचं ध्येय आहे.
-      </marquee>
 
       <!-- About Section -->
       <section id="about">
-        <h2>आमच्याबद्दल</h2>
-        <p>
+        <h2 class="lang mr">आमच्याबद्दल</h2>
+        <h2 class="lang en" style="display: none">About Us</h2>
+
+        <p class="lang mr">
           वारकरी अमृततुल्यची सुरुवात एका साध्या पण मोठ्या स्वप्नातून झाली —
           लोकांना रोज सकाळी आणि संध्याकाळी ताजेतवाने करणारा, सुगंधी आणि परवडणारा
           गुळाचा चहा देण्यासाठी.
         </p>
-        <p>
+        <p class="lang en" style="display: none">
+          Varkari Amruttulya began with a simple but big dream — to serve
+          aromatic and affordable jaggery tea that refreshes people every
+          morning and evening.
+        </p>
+
+        <p class="lang mr">
           संस्थापक <strong>श्री. अर्पित येलाले</strong> यांनी या प्रवासाची
           सुरुवात केली. त्यांच्या मेहनतीमुळे आज वारकरी अमृततुल्य अनेक शाखांमधून
           लोकांच्या हृदयात स्थान मिळवत आहे.
+        </p>
+        <p class="lang en" style="display: none">
+          The founder <strong>Mr. Arpit Yelale</strong> started this journey.
+          With his hard work, Varkari Amruttulya has made its place in people’s
+          hearts through multiple branches today.
         </p>
         <p class="section-separator">✦✧✦✧✦</p>
       </section>
 
       <!-- Menu Section -->
-      <section id="about">
-        <h2>मेन्यू</h2>
-        <section id="menu" class="menu">
-          <div class="menu-items">
-            <div class="item">
-              <h3>गुळाचा चहा</h3>
-            </div>
-            <div class="item">
-              <h3>गुळाचा क्रीमरोल</h3>
-            </div>
-            <div class="item">
-              <h3>कॉफी</h3>
-            </div>
+      <h2 class="lang mr">मेन्यू</h2>
+      <h2 class="lang en" style="display: none">Menu</h2>
+
+      <section id="menu" class="menu">
+        <div class="menu-items">
+          <div class="item">
+            <h3 class="lang mr">गुळाचा चहा</h3>
+            <h3 class="lang en" style="display: none">Jaggery Tea</h3>
           </div>
-        </section>
-        <p class="section-separator">✦✧✦✧✦</p>
+          <div class="item">
+            <h3 class="lang mr">गुळाचा क्रीमरोल</h3>
+            <h3 class="lang en" style="display: none">Jaggery Cream Roll</h3>
+          </div>
+          <div class="item">
+            <h3 class="lang mr">कॉफी</h3>
+            <h3 class="lang en" style="display: none">Coffee</h3>
+          </div>
+        </div>
       </section>
+      <p class="section-separator">✦✧✦✧✦</p>
+
       <!-- Branches Section -->
       <section id="branches">
-        <h2>आमच्या शाखा</h2>
+        <h2 class="lang mr">आमच्या शाखा</h2>
+        <h2 class="lang en" style="display: none">Our Branches</h2>
+
         <div class="branch-cards">
           <div class="branch-card">
             <img
@@ -107,17 +160,23 @@
               alt="Varkari Cup Logo"
               class="branch-logo"
             />
-            <h3>मोहोळ - मुख्य शाखा</h3>
-            <p>पत्ता: मोहोळ, महाराष्ट्र</p>
-            <p>वेळ: सकाळी 6:00 ते रात्री 10:00</p>
+            <h3 class="lang mr">मोहोळ - मुख्य शाखा</h3>
+            <h3 class="lang en" style="display: none">Mohol - Main Branch</h3>
+            <p class="lang mr">पत्ता: मोहोळ, महाराष्ट्र</p>
+            <p class="lang en" style="display: none">
+              Address: Mohol, Maharashtra
+            </p>
+            <p class="lang mr">वेळ: सकाळी 6:00 ते रात्री 10:00</p>
+            <p class="lang en" style="display: none">
+              Time: 6:00 AM to 10:00 PM
+            </p>
             <a
               href="https://maps.app.goo.gl/by6hMekoUnKNcJbc6"
               target="_blank"
               rel="noopener noreferrer"
               class="map-link"
+              >📍 View on Map 👈</a
             >
-              📍 View on Map 👈
-            </a>
           </div>
 
           <div class="branch-card">
@@ -125,19 +184,24 @@
               src="images/Varkari-Cup.png"
               alt="Varkari Cup Logo"
               class="branch-logo"
-              class="map-link"
             />
-            <h3>मानेगाव - सोलापूर</h3>
-            <p>पत्ता: मानेगाव, माढा</p>
-            <p>वेळ: सकाळी 6:00 ते रात्री 10:00</p>
+            <h3 class="lang mr">मानेगाव - सोलापूर</h3>
+            <h3 class="lang en" style="display: none">Manegaon - Solapur</h3>
+            <p class="lang mr">पत्ता: मानेगाव, माढा</p>
+            <p class="lang en" style="display: none">
+              Address: Manegaon, Madha
+            </p>
+            <p class="lang mr">वेळ: सकाळी 6:00 ते रात्री 10:00</p>
+            <p class="lang en" style="display: none">
+              Time: 6:00 AM to 10:00 PM
+            </p>
             <a
               href="https://maps.app.goo.gl/x5TY6ee6kobCBSXg9"
               target="_blank"
               rel="noopener noreferrer"
               class="map-link"
+              >📍 View on Map 👈</a
             >
-              📍 View on Map 👈
-            </a>
           </div>
 
           <div class="branch-card">
@@ -146,17 +210,23 @@
               alt="Varkari Cup Logo"
               class="branch-logo"
             />
-            <h3>पंढरपूर - सोलापूर</h3>
-            <p>पत्ता: पंढरपूर, सोलापूर</p>
-            <p>वेळ: सकाळी 6:00 ते रात्री 10:00</p>
+            <h3 class="lang mr">पंढरपूर - सोलापूर</h3>
+            <h3 class="lang en" style="display: none">Pandharpur - Solapur</h3>
+            <p class="lang mr">पत्ता: पंढरपूर, सोलापूर</p>
+            <p class="lang en" style="display: none">
+              Address: Pandharpur, Solapur
+            </p>
+            <p class="lang mr">वेळ: सकाळी 6:00 ते रात्री 10:00</p>
+            <p class="lang en" style="display: none">
+              Time: 6:00 AM to 10:00 PM
+            </p>
             <a
               href="https://maps.app.goo.gl/wwfc7RpEBRpmnHYp9"
               target="_blank"
               rel="noopener noreferrer"
               class="map-link"
+              >📍 View on Map 👈</a
             >
-              📍 View on Map 👈
-            </a>
           </div>
         </div>
         <p class="section-separator">✦✧✦✧✦</p>
@@ -164,24 +234,30 @@
 
       <!-- Testimonials Section -->
       <section id="testimonials">
-        <h2>ग्राहकांचे अभिप्राय</h2>
-        <blockquote>
+        <h2 class="lang mr">ग्राहकांचे अभिप्राय</h2>
+        <h2 class="lang en" style="display: none">Customer Testimonials</h2>
+
+        <blockquote class="lang mr">
           "वारकरी अमृततुल्य गुळाचा चहा म्हणजे खरंच स्वर्गीय अनुभव! गुळाचा चहा
           इतका मस्त की रोज येऊन प्यावं वाटतं." – मोहोळकर
+        </blockquote>
+        <blockquote class="lang en" style="display: none">
+          "Varkari Amruttulya's jaggery tea is truly a heavenly experience! It's
+          so good that I feel like having it every day." – Moholkar
         </blockquote>
         <p class="section-separator">✦✧✦✧✦</p>
       </section>
 
       <!-- Contact Section -->
       <section id="contact">
-        <h2>संपर्क</h2>
+        <h2 class="lang mr">संपर्क</h2>
+        <h2 class="lang en" style="display: none">Contact</h2>
 
         <div class="contact-icons">
           <a href="tel:+917559253846" class="phone" title="Call">
-            <i class="fas fa-phone-alt" aria-hidden="true"></i>
-            <span class="sr-only">Call</span>
+            <i class="fas fa-phone-alt" aria-hidden="true"></i
+            ><span class="sr-only">Call</span>
           </a>
-
           <a
             href="https://wa.me/917559253846"
             class="whats"
@@ -189,29 +265,33 @@
             rel="noopener"
             title="WhatsApp"
           >
-            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            <span class="sr-only">WhatsApp</span>
+            <i class="fab fa-whatsapp" aria-hidden="true"></i
+            ><span class="sr-only">WhatsApp</span>
           </a>
-
           <a
-            href="https://www.instagram.com/varkari_amruttulya_mh13?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.instagram.com/varkari_amruttulya_mh13"
             class="insta"
             target="_blank"
             rel="noopener"
             title="Instagram"
           >
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-            <span class="sr-only">Instagram</span>
+            <i class="fab fa-instagram" aria-hidden="true"></i
+            ><span class="sr-only">Instagram</span>
           </a>
-
           <a href="mailto:yourmail@gmail.com" class="email" title="Email">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-            <span class="sr-only">Email</span>
+            <i class="fas fa-envelope" aria-hidden="true"></i
+            ><span class="sr-only">Email</span>
           </a>
         </div>
         <br />
-        <p>📍 पत्ता: मोहोळ (सोलापूर), महाराष्ट्र</p>
-        <p>⌚ वेळ: सकाळी 6:00 ते रात्री 10:00</p>
+        <p class="lang mr">📍 पत्ता: मोहोळ (सोलापूर), महाराष्ट्र</p>
+        <p class="lang en" style="display: none">
+          📍 Address: Mohol (Solapur), Maharashtra
+        </p>
+        <p class="lang mr">⌚ वेळ: सकाळी 6:00 ते रात्री 10:00</p>
+        <p class="lang en" style="display: none">
+          ⌚ Time: 6:00 AM to 10:00 PM
+        </p>
         <p class="section-separator">✦✧✦✧✦</p>
       </section>
     </main>
@@ -223,20 +303,26 @@
         alt="Varkari Cup Logo"
         class="footer-logo"
       />
-      <p>© 2025 Varkari Amruttulya | All Rights Reserved</p>
+      <p class="lang mr">© 2025 वारकरी अमृततुल्य | सर्व हक्क राखीव</p>
+      <p class="lang en" style="display: none">
+        © 2025 Varkari Amruttulya | All Rights Reserved
+      </p>
       <p>
-        💻 Designed & Developed by
+        💻
+        <span class="lang mr dev-label">Designed & Developed by </span>
+        <span class="lang en dev-label" style="display: none">
+          Designed & Developed by
+        </span>
         <a
           href="https://www.instagram.com/onkarlondhe_45"
           target="_blank"
-          class="dev-name"
+          class="dev-name dev-label"
           >Onkar Londhe</a
         >
         🚀✨
       </p>
     </footer>
 
-    <!-- Scripts -->
     <script>
       // Hamburger toggle
       const hamburger = document.querySelector(".hamburger");
@@ -259,6 +345,35 @@
             hamburger.classList.remove("active");
           }
         });
+      });
+
+      // Language toggle function
+      function setLanguage(lang) {
+        document.querySelectorAll(".lang").forEach((el) => {
+          el.style.display = el.classList.contains(lang) ? "" : "none";
+        });
+      }
+
+      function setLanguage(lang) {
+        document.querySelectorAll(".lang").forEach((el) => {
+          el.style.display = el.classList.contains(lang) ? "" : "none";
+        });
+      }
+
+      // Initialize default language to Marathi
+      setLanguage("mr");
+
+      const langToggle = document.getElementById("langToggle");
+      const langLabel = document.getElementById("langLabel");
+
+      langToggle.addEventListener("change", () => {
+        if (langToggle.checked) {
+          langLabel.textContent = "English";
+          setLanguage("en");
+        } else {
+          langLabel.textContent = "मराठी";
+          setLanguage("mr");
+        }
       });
     </script>
   </body>

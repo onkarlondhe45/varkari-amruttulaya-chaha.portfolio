@@ -172,6 +172,22 @@ section {
   text-align: center;
 }
 
+h2.lang.mr,
+h2.lang.en {
+  font-size: 1.4rem;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #d2691e;
+  margin-bottom: 1rem; /* spacing below both */
+  text-align: center;
+  display: block; /* ensures margin works */
+}
+
+footer .dev-label {
+  font-size: 0.8rem;   /* smaller size */
+  font-style: italic;  /* italic */
+}
+
 section h2 {
   font-size: 1.8rem;
   border-radius: 10px;
@@ -458,4 +474,76 @@ main {
 
 .map-link:hover {
   color: #a0522d; /* Optional: change color on hover */
+}
+
+
+/* 🌐 Toggle Switch - Right Side Below Navbar */
+/* 🌐 Smaller Toggle Switch - Right Side Below Navbar */
+.language-switch.toggle-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;          /* smaller gap */
+  padding: 5px 10px; /* reduced padding */
+  color: #3e2723;
+  font-size: 0.85rem; /* smaller font for label */
+}
+
+/* Switch container - smaller */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;  /* smaller width */
+  height: 18px; /* smaller height */
+}
+
+/* Slider styling */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d2691e;
+  transition: 0.4s;
+  border-radius: 18px; /* match height for full round */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;  /* smaller circle */
+  width: 14px;   /* smaller circle */
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Checked state */
+.switch input:checked + .slider {
+  background-color: #5a2d0c;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(18px); /* match new width - height */
+}
+
+/* Hide default checkbox completely */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+/* Language label text color */
+.language-switch #langLabel {
+  color: #5a2d0c;  /* dark brown - matches your theme */
+  font-weight: bold; /* optional: make it stand out */
+  font-size: 0.85rem; /* match smaller toggle */
 }
